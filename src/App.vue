@@ -2,6 +2,9 @@
   <div class="container1">
     <h1>学習内容を選択してください</h1>
   </div>
+  <div class="container0">
+    <button v-on:click="backhome">戻る</button>
+  </div>
 
   <div class="container2">
     <button v-on:click="sentmail">孫にメールを送る編</button>
@@ -14,9 +17,26 @@
 </template>
 
 <script>
+import { url } from 'inspector';
+
 export default {
-  methods: {},
-}
+  methods: {
+    back(){
+      this.$router.push(url)
+    },
+    sentmail(){
+      this.$router.push(url)
+    },
+    call(){
+      this.$router.push(url)
+    },
+    addfriends(){
+      this.$router.push(url)
+    },
+    sentphotos(){
+      this.$router.push(url)
+    },
+},
 </script>
 
 <style>

@@ -13,7 +13,11 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  methods: {},
+}
+</script>
 
 <style>
 #app {

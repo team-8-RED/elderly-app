@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router"
 import HomeView from "../views/HomeView.vue"
 import FirstView from "../views/FirstView.vue"
-
+import LoginForm from "../views/LoginForm.vue"
+import TopPage from "../views/TopPage.vue"
 const routes = [
   {
     path: "/",
@@ -21,6 +22,16 @@ const routes = [
     path: "/first",
     name: "first",
     component: FirstView,
+  },
+  {
+    path: "/loginForm",
+    name: "loginForm",
+    component: LoginForm,
+  },
+  {
+    path: "/topPage",
+    name: "topPage",
+    component: TopPage,
   },
 ]
 

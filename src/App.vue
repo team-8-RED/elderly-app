@@ -1,16 +1,13 @@
 <template>
   <Header />
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/first">First</router-link>
-  </nav>
+  <router-link to="/first">(消)first</router-link> |
+  <router-link to="/topPage">（消）トップページ</router-link>
   <router-view />
   <Footer />
 </template>
 <script>
-import Header from "./components/HeaderComponent.vue"
-import Footer from "./components/FooterComponent.vue"
+import Header from "@/components/HeaderComponent.vue"
+import Footer from "@/components/FooterComponent.vue"
 
 export default {
   components: { Header, Footer },

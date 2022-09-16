@@ -5,8 +5,9 @@
       <h2>人生を豊かにしよう。</h2>
     </div>
     <div class="button-wrapper">
-      <button class="start-button">ログイン</button>
-      <button class="start-button">新規登録</button>
+      <button class="start-button">
+        <router-link to="/loginForm">ログイン</router-link>
+      </button>
     </div>
     <div class="site-image">
       <img src="" alt="サイトイメージ" />

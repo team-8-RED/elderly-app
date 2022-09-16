@@ -4,7 +4,6 @@
       <img src="" alt="ロゴ" />
       <h3>高齢者のためのスマホ基本講座</h3>
     </div>
-    <button class="login-button">ログイン</button>
   </div>
 </template>
 

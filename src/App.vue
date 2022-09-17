@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <router-link to="/first">(消)first</router-link> |
+  <router-link to="/">(消)first</router-link> |
   <router-link to="/topPage">（消）トップページ</router-link>
   <router-view />
   <Footer />

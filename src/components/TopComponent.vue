@@ -6,7 +6,7 @@
     <div class="contents">
       <button class="button">コース一覧</button>
       <button class="button">
-        <router-link to="/first">ログアウト</router-link>
+        <router-link to="/">ログアウト</router-link>
       </button>
       <button class="button">ヘルプ</button>
       <button class="button">スタッフクレジット想い</button>

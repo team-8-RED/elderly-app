@@ -8,7 +8,9 @@
       <button class="button">
         <router-link to="/">ログアウト</router-link>
       </button>
-      <button class="button">ヘルプ</button>
+      <button class="button">
+        <router-link to="/staffCredit">ヘルプ</router-link>
+      </button>
       <button class="button">スタッフクレジット想い</button>
     </div>
   </div>

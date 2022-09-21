@@ -6,7 +6,7 @@
     <div class="contents" id="app">
       <p>実際に、フリックで、文字を入力してみよう！</p>
       <h3>Q.以下の「文字」をフリック動かして、入力してみよう!</h3>
-      <h3>[{{ reloadPage }}]</h3>
+      <div>[{{ questions[count] }}]</div>
       <button v-on:click="checkQuiz">入力完了</button>
       <p>{{ comment }}</p>
       <button v-if="isTrue" v-on:click="nextQuiz">次の問題に進む</button>
@@ -54,8 +54,11 @@ export default {
   data() {
     return {
       texts: "",
-      display: "",
-      question: ["めーるのおくりかた", "らいんのつかいかた"],
+      questions: [
+        "めーるのおくりかた",
+        "らいんのつかいかた",
+        "すまほになれよう",
+      ],
       count: 0,
       comment: "",
       isTrue: false,
@@ -77,7 +80,7 @@ export default {
   },
   methods: {
     checkQuiz() {
-      if (this.texts == this.display) {
+      if (this.texts == this.questions[this.count]) {
         this.comment = "お見事！！よくできました"
         this.isTrue = !this.isTrue
       } else {
@@ -87,6 +90,12 @@ export default {
     },
     nextQuiz() {
       this.count += 1
+      if (this.count < this.questions.length) {
+        this.comment = ""
+        this.texts = ""
+      } else {
+        this.comment = "問題は終了だよ!"
+      }
     },
     updateTexts(newTexts) {
       this.texts += newTexts

@@ -7,5 +7,7 @@
 /*色は適当です今のところ*/
 .footer {
   background-color: black;
+  color: gray;
+  height: 5vh;
 }
 </style>

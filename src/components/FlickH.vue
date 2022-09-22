@@ -24,6 +24,7 @@ export default {
       this.displayKey = true
       this.startX = e.touches[0].pageX
       this.startY = e.touches[0].pageY
+      e.preventDefault()
     },
     touchEnd(e) {
       //離すと非表示
@@ -36,6 +37,7 @@ export default {
       this.texts = select.innerText
       console.log(this.texts)
       this.$emit("child", this.texts)
+      e.preventDefault()
     },
   },
 }
@@ -74,17 +76,21 @@ export default {
 .flick-list .flick-left {
   top: 0;
   left: -41px;
+  z-index: 1;
 }
 .flick-list .flick-top {
   top: -41px;
   left: 0;
+  z-index: 1;
 }
 .flick-list .flick-right {
   top: 0px;
   left: 41px;
+  z-index: 1;
 }
 .flick-list .flick-bottom {
   top: 41px;
   left: 0;
+  z-index: 1;
 }
 </style>

@@ -16,18 +16,14 @@
 </template>
 
 <style>
-.contents {
-  display: flex;
-  flex-direction: column;
-}
-.title-texty {
+.title-text {
   padding: 20px;
   text-align: center;
 }
 .site-image {
-  background-color: #e1eec1;
-  height: 30vh;
-  background-size: cover;
+  background: #e1eec1;
+  height: 35vh;
+  width: 100vh;
 }
 .start-button {
   background-color: #7ab977;

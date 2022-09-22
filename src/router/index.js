@@ -2,6 +2,10 @@ import { createRouter, createWebHistory } from "vue-router"
 import FirstView from "../views/FirstView.vue"
 import LoginForm from "../views/LoginForm.vue"
 import TopPage from "../views/TopPage.vue"
+import CourseExam from "../views/CourseExam.vue"
+import LineCourse from "../views/Line/LineCourse.vue"
+import LinePhoneCall from "../views/Line/LinePhoneCall.vue"
+import WorkOutCall from "../views/Line/LinePhoneCallWorkout.vue"
 import StaffCredit from "../views/StaffCredit.vue"
 import FlickParent from "../views/FlickParent.vue"
 import FlickPractice from "../views/FlickPractice.vue"
@@ -23,6 +27,25 @@ const routes = [
     component: TopPage,
   },
   {
+    path: "/courselist",
+    name: "Courselist",
+    component: CourseExam,
+  },
+  {
+    path: "/linecourse",
+    name: "LineCourse",
+    component: LineCourse,
+  },
+  {
+    path: "/linephonecall",
+    name: "LinePhoneCall",
+    component: LinePhoneCall,
+  },
+  {
+    path: "/workoutcall",
+    name: "WorkOutCall",
+    component: WorkOutCall,
+  },
     path: "/staffCredit",
     name: "staffCredit",
     component: StaffCredit,
@@ -48,4 +71,5 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
 })
+
 export default router

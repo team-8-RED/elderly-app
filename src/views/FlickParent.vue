@@ -5,7 +5,7 @@
     </div>
     <div class="contents" id="app">
       <p>実際に、フリックで、文字を入力してみよう！</p>
-      <h3>Q.以下の「文字」をフリック動かして、入力してみよう!</h3>
+      <h3>Q.以下の「文字」をフリック動かして、入力してみよう!!</h3>
       <div>[{{ questions[count] }}]</div>
       <button v-on:click="checkQuiz">入力完了</button>
       <p>{{ comment }}</p>

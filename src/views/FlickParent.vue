@@ -5,16 +5,17 @@
     </div>
     <div class="contents" id="app">
       <p>実際に、フリックで、文字を入力してみよう！</p>
-      <h3>Q.以下の「文字」をフリック動かして、入力してみよう!!</h3>
-      <div>[{{ questions[count] }}]</div>
+      <h3>Q.以下の「文字」をフリック入力してみよう!!</h3>
+      <div>「{{ questions[count] }}」</div>
+      <input type="text" v-model="texts" />
       <button v-on:click="checkQuiz">入力完了</button>
       <p>{{ comment }}</p>
       <button v-if="isTrue" v-on:click="nextQuiz">次の問題に進む</button>
-      <input type="text" v-model="texts" />
-      <div>
-        <p>＜文字を消す時＞</p>
-        <p>上の▢を触れて、◁ボタンを押そう！</p>
+      <div class="display-pic">
+        <p>文字を消す時は、 上の▢を触れて、◁ボタンを押そう！</p>
+        <img src="@/assets/ggStudent.png" alt="学生" />
       </div>
+      <p>↓↓こちらのキーボードから入力してみよう！！↓↓</p>
       <div class="base">
         <div class="grid">
           <FlickA v-on:child="updateTexts"></FlickA>
@@ -32,8 +33,12 @@
         </div>
       </div>
       <p>
-        （注）キーボードをはみ出してしまうと入力される文字がおかしくなります
+        （注）キーボードをはみ出してしまうと入力される文字がおかしくなります。
+        お手数ですが、ページの更新をお願いします。
       </p>
+      <button>
+        <router-link to="/topPage">トップページに戻る</router-link>
+      </button>
     </div>
   </div>
 </template>
@@ -93,6 +98,7 @@ export default {
       if (this.count < this.questions.length) {
         this.comment = ""
         this.texts = ""
+        this.isTrue = !this.isTrue
       } else {
         this.comment = "問題は終了だよ!"
       }
@@ -114,6 +120,7 @@ export default {
 <style>
 .title {
   text-align: center;
+  border-bottom: 5px solid green;
 }
 .contents {
   display: flex;
@@ -129,7 +136,7 @@ export default {
 }
 .base {
   position: relative;
-  height: 40vh;
+  height: 45vh;
 }
 .grid {
   display: grid;
@@ -138,5 +145,15 @@ export default {
   grid-gap: -20px;
   position: absolute;
   right: -20px;
+}
+.display-pic {
+  display: flex;
+  justify-content: space-between;
+}
+.display-pic p {
+  text-align: left;
+}
+.display-pic img {
+  width: 100px;
 }
 </style>

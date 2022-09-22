@@ -17,4 +17,7 @@
   display: flex;
   justify-content: flex-start;
 }
+.container img {
+  width: 50px;
+}
 </style>

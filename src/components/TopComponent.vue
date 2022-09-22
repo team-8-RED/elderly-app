@@ -9,9 +9,8 @@
         <router-link to="/">ログアウト</router-link>
       </button>
       <button class="button">
-        <router-link to="/staffCredit">ヘルプ</router-link>
+        <router-link to="/staffCredit">スタッフクレジット想い</router-link>
       </button>
-      <button class="button">スタッフクレジット想い</button>
     </div>
   </div>
 </template>

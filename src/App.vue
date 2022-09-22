@@ -1,9 +1,6 @@
 <template>
   <Header />
-  <router-link to="/">(消)first</router-link> |
-  <router-link to="/topPage">（消）トップページ</router-link> |
-  <router-link to="/flickParent">（消す）フリック練習</router-link>
-
+  <router-link to="/flickPractice">（消す）フリックスライド</router-link> |
   <router-view />
   <Footer />
 </template>

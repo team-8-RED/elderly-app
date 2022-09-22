@@ -4,7 +4,7 @@
     <div class="flick-left" v-if="displayKey">（</div>
     <div class="flick-top" v-if="displayKey">ゆ</div>
     <div class="flick-right" v-if="displayKey">）</div>
-    <div class="flick-bottom" v-if="displayKey"></div>
+    <div class="flick-bottom" v-if="displayKey">よ</div>
   </div>
 </template>
 

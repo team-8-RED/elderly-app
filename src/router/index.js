@@ -4,6 +4,8 @@ import LoginForm from "../views/LoginForm.vue"
 import TopPage from "../views/TopPage.vue"
 import StaffCredit from "../views/StaffCredit.vue"
 import FlickParent from "../views/FlickParent.vue"
+import FlickPractice from "../views/FlickPractice.vue"
+import FlickPractice2 from "../views/FlickPractice2.vue"
 const routes = [
   {
     path: "/",
@@ -29,6 +31,16 @@ const routes = [
     path: "/flickParent",
     name: "flickParent",
     component: FlickParent,
+  },
+  {
+    path: "/flickPractice",
+    name: "flickPractice",
+    component: FlickPractice,
+  },
+  {
+    path: "/flickPractice2",
+    name: "flickPractice2",
+    component: FlickPractice2,
   },
 ]
 

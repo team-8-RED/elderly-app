@@ -29,7 +29,7 @@
           <label class="label">例)6月7日生まれであれば、「 0607」を入力 </label>
           <input type="text" class="text" v-model="password" />
           <button v-on:click="checkLogin">ログイン</button>
-          <button><router-link to="/first">ホームに戻る</router-link></button>
+          <button><router-link to="/">ホームに戻る</router-link></button>
         </div>
       </div>
     </div>

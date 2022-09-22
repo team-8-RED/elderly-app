@@ -14,7 +14,7 @@
         <button v-on:click="addAcount">
           <router-link to="/loginForm">新規登録</router-link>
         </button>
-        <button><router-link to="/first">ホームに戻る</router-link></button>
+        <button><router-link to="/">ホームに戻る</router-link></button>
       </div>
     </div>
   </div>

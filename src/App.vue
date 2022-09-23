@@ -1,6 +1,5 @@
 <template>
   <Header />
-  <router-link to="/flickPractice">（消す）フリックスライド</router-link> |
   <router-view />
   <Footer />
 </template>

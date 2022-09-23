@@ -1,8 +1,8 @@
 <template>
   <header id="header2">
-    <router-link to="/linephonecall">講義</router-link> |
-    <router-link to="/workoutcall">問題</router-link> |
-    <router-link to="/linecourse">一覧に戻る</router-link>
+    <button><router-link to="/linephonecall">講義</router-link></button>
+    <button><router-link to="/workoutcall">問題</router-link></button>
+    <button><router-link to="/linecourse">一覧に戻る</router-link></button>
   </header>
   <h1 class="h">孫にメッセージを送ろう</h1>
   <img v-bind:src="currentimg" class="slides" alt="次へを押してください" />
@@ -50,9 +50,6 @@ export default {
 <style>
 .h {
   width: 390px;
-}
-.header {
-  background-color: #7ab977;
 }
 .slides {
   width: 390px;

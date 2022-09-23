@@ -1,23 +1,17 @@
 <template>
   <div class="header">
-    <div class="container">
-      <img src="" alt="ロゴ" />
-      <h3>高齢者のためのスマホ基本講座</h3>
-    </div>
+    <h3 class="container">高齢者のためのスマホ基本講座</h3>
   </div>
 </template>
 
 <style>
 .header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px solid #e1eec1;
+  border-bottom: 5px solid black;
 }
 .container {
-  display: flex;
-  justify-content: flex-start;
+  text-align: center;
 }
-.container img {
-  width: 50px;
+router-link {
+  color: black;
 }
 </style>

@@ -20,6 +20,7 @@
           <button v-on:click="addAcount">
             <router-link to="/loginForm">新規登録</router-link>
           </button>
+          <p>{{ comment }}</p>
         </div>
       </div>
       <div>
@@ -37,6 +38,7 @@
             </label>
             <input type="text" class="text" v-model="password" />
             <button v-on:click="checkLogin">ログイン</button>
+            <p>{{ missComment }}</p>
             <button><router-link to="/">ホームに戻る</router-link></button>
           </div>
         </div>
@@ -59,6 +61,8 @@ export default {
       loginName: "",
       password: "",
       isLogin: "true",
+      comment: "",
+      missComment: "",
     }
   },
 
@@ -67,12 +71,15 @@ export default {
       //usersに、入力した値をオブジェクト形式で文字列で格納する
       this.users.push(this.inputName, this.inputPassword)
       console.log(this.users)
+      this.comment = "新規登録完了！！ログインできるようになりました！"
     },
     checkLogin() {
       //入力された情報を配列内で検索して、見つかれば、ページ遷移
       const checkPassword = this.users.includes(this.password)
       if (checkPassword) {
         this.isLogin = false
+      } else {
+        this.missComment = "ログイン情報が一致しません"
       }
     },
   },

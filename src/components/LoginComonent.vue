@@ -14,6 +14,7 @@
         <button v-on:click="addAcount">
           <router-link to="/loginForm">新規登録</router-link>
         </button>
+        <div>{{ trueRegister }}</div>
       </div>
     </div>
     <div>
@@ -45,6 +46,7 @@ export default {
       loginName: "",
       password: "",
       isLogin: "true",
+      trueRegister: "",
     }
   },
 
@@ -53,6 +55,8 @@ export default {
       //usersに、入力した値をオブジェクト形式で文字列で格納する
       this.users.push(this.inputName, this.inputPassword)
       console.log(this.users)
+      this.trueRegister = "新規登録完了できたよ！！ログインしよう！"
+      console.log(this.trueRegister)
     },
     checkLogin() {
       //入力された情報を配列内で検索して、見つかれば、ページ遷移

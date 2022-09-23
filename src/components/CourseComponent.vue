@@ -1,19 +1,25 @@
 <template>
   <div class="contents">
-    <button class="line">
+    <button class="button">
+      <router-link to="/flickPractice">フリック入力</router-link>
+    </button>
+    <button class="button">
       <router-link to="/linecourse">LINE</router-link>
     </button>
-    <button class="youtube">
+    <button class="button">
       <router-link to="/youtubecourse">Youtube</router-link>
     </button>
-    <button class="paypay">
+    <button class="button">
       <router-link to="/paypaycouse">PayPay</router-link>
     </button>
-    <button class="googlemap">
+    <button class="button">
       <router-link to="/googlemapcourse">Google Map</router-link>
     </button>
-    <button class="safari">
+    <button class="button">
       <router-link to="/safaricourse">Safari</router-link>
+    </button>
+    <button>
+      <router-link to="/topPage">トップページに戻る</router-link>
     </button>
   </div>
 </template>

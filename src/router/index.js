@@ -46,6 +46,7 @@ const routes = [
     name: "WorkOutCall",
     component: WorkOutCall,
   },
+  {
     path: "/staffCredit",
     name: "staffCredit",
     component: StaffCredit,

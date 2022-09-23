@@ -8,10 +8,11 @@
         <router-link to="/courselist">コース一覧</router-link>
       </button>
       <button class="button">
-        <router-link to="/first">ログアウト</router-link>
+        <router-link to="/">ログアウト</router-link>
       </button>
-      <button class="button">ヘルプ</button>
-      <button class="button">スタッフクレジット想い</button>
+      <button class="button">
+        <router-link to="/staffCredit">スタッフクレジット想い</router-link>
+      </button>
     </div>
   </div>
 </template>

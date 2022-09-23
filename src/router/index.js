@@ -22,18 +22,13 @@ import SafariDelete from "../views/Safari/SafariDelete.vue"
 import GoogleMapCourse from "../views/GoogleMap/GooglemapCourse.vue"
 import GoogleMap from "../views/GoogleMap/GooglemapHowto.vue"
 
+import StaffCredit from "../views/StaffCredit.vue"
+import FlickParent from "../views/FlickParent.vue"
+import FlickPractice from "../views/FlickPractice.vue"
+import FlickPractice2 from "../views/FlickPractice2.vue"
 const routes = [
-  // {
-  //   path: "/about",
-  //   name: "about",
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () =>
-  //     import(/* webpackChunkName: "about" */ "../views/LInecourse.vue"),
-  // },
   {
-    path: "/first",
+    path: "/",
     name: "first",
     component: FirstView,
   },
@@ -141,6 +136,26 @@ const routes = [
     path: "/googlemap",
     name: "GoogleMap",
     component: GoogleMap,
+  },
+  {
+    path: "/staffCredit",
+    name: "staffCredit",
+    component: StaffCredit,
+  },
+  {
+    path: "/flickParent",
+    name: "flickParent",
+    component: FlickParent,
+  },
+  {
+    path: "/flickPractice",
+    name: "flickPractice",
+    component: FlickPractice,
+  },
+  {
+    path: "/flickPractice2",
+    name: "flickPractice2",
+    component: FlickPractice2,
   },
 ]
 

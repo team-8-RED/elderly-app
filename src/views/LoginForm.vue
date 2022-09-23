@@ -37,7 +37,7 @@
             </label>
             <input type="text" class="text" v-model="password" />
             <button v-on:click="checkLogin">ログイン</button>
-            <button><router-link to="/first">ホームに戻る</router-link></button>
+            <button><router-link to="/">ホームに戻る</router-link></button>
           </div>
         </div>
       </div>

@@ -11,9 +11,13 @@
 .header {
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid #e1eec1;
 }
 .container {
   display: flex;
   justify-content: flex-start;
+}
+.container img {
+  width: 50px;
 }
 </style>

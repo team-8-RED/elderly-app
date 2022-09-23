@@ -2,9 +2,9 @@
   <header id="header2">
     <router-link to="/linephonecall">講義</router-link> |
     <router-link to="/workoutcall">問題</router-link> |
-    <router-link to="/linecourse">一覧に戻る</router-link>
+    <router-link to="/paypaycourse">一覧に戻る</router-link>
   </header>
-  <h1 class="h">孫に電話をかけよう</h1>
+  <h1 class="h">お金を送ろう</h1>
   <img v-bind:src="currentimg" class="slides" alt="次へを押してください" />
   <div class="buttons">
     <button @click="prev" class="prev">戻る</button>
@@ -16,11 +16,11 @@ export default {
   data() {
     return {
       ImgSrc: [
-        require("@/imgs/Line/Call/call1.png"),
+        require("@/imgs/Paypay/Send/send1.png"),
 
-        require("@/imgs/Line/Call/call2.png"),
+        require("@/imgs/Paypay/Send/send2.png"),
 
-        require("@/imgs/Line/Call/call3.png"),
+        require("@/imgs/Paypay/Send/send3.png"),
       ],
       currentIndex: -1,
     }

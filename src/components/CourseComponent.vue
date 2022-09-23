@@ -7,7 +7,7 @@
       <router-link to="/youtubecourse">Youtube</router-link>
     </button>
     <button class="paypay">
-      <router-link to="/paypaycouse">PayPay</router-link>
+      <router-link to="/paypaycourse">PayPay</router-link>
     </button>
     <button class="googlemap">
       <router-link to="/googlemapcourse">Google Map</router-link>

@@ -4,7 +4,7 @@
     <router-link to="/workoutcall">問題</router-link> |
     <router-link to="/linecourse">一覧に戻る</router-link>
   </header>
-  <h1 class="h">孫に電話をかけよう</h1>
+  <h1 class="h">孫にメッセージを送ろう</h1>
   <img v-bind:src="currentimg" class="slides" alt="次へを押してください" />
   <div class="buttons">
     <button @click="prev" class="prev">戻る</button>
@@ -16,11 +16,14 @@ export default {
   data() {
     return {
       ImgSrc: [
-        require("@/imgs/Line/Call/call1.png"),
+        require("@/imgs/Line/Message/message1.png"),
 
-        require("@/imgs/Line/Call/call2.png"),
+        require("@/imgs/Line/Message/message2.png"),
 
-        require("@/imgs/Line/Call/call3.png"),
+        require("@/imgs/Line/Message/message3.png"),
+        require("@/imgs/Line/Message/message4.png"),
+        require("@/imgs/Line/Message/message5.png"),
+        require("@/imgs/Line/Message/message6.png"),
       ],
       currentIndex: -1,
     }

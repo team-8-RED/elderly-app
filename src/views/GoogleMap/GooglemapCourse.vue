@@ -1,16 +1,7 @@
 <template>
   <div class="content2">
     <button class="lesson1">
-      <router-link to="/linephonecall">孫に電話</router-link>
-    </button>
-    <button class="lesson2">
-      <router-link to="/linemessage">孫にメッセージを送る</router-link>
-    </button>
-    <button class="lesson3">
-      <router-link to="/addfriends">友達を追加する</router-link>
-    </button>
-    <button class="lesson4">
-      <router-link to="/sendphotos">写真を送る</router-link>
+      <router-link to="/googlemap">GoogleMapを使ってみよう</router-link>
     </button>
   </div>
 </template>
